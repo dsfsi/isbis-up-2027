@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISBIS 2027 | Save the date: 7–9 July 2027, Pretoria</title>
+<meta name="description" content="ISBIS 2027 is coming to South Africa. 7–9 July 2027, hosted by the University of Pretoria.">
+<link rel="icon" href="assets/ribbon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="logos">
+    <img src="assets/logo-isbis.png" alt="ISBIS: International Society for Business and Industrial Statistics">
+    <img src="assets/logo-up.png" alt="University of Pretoria">
+  </div>
+  <nav aria-label="Main">
+    <a href="#home" aria-current="page">Home</a>
+    <!-- Add real pages later: change href="#" to e.g. href="programme.html" and remove data-soon -->
+    <a href="#" data-soon="Programme">Programme</a>
+    <a href="#" data-soon="Speakers">Speakers</a>
+    <a href="#" data-soon="Call for abstracts">Abstracts</a>
+    <a href="#" data-soon="Venue and travel">Venue</a>
+    <a href="#" data-soon="Contact">Contact</a>
+    <a href="#" class="btn small" data-soon="Registration">Register</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <img class="hero-photo" src="assets/hero.jpg" alt="The University of Pretoria Old Arts Building at dusk, with jacaranda trees">
+    <div class="panel">
+      <p class="kicker">Save the date</p>
+      <h1>ISBIS is coming to <span>South Africa</span></h1>
+      <p class="date">7–9 July 2027</p>
+      <p class="host">Hosted by the University of Pretoria</p>
+      <a href="#" class="btn" data-soon="Registration">Register your interest</a>
+    </div>
+  </section>
+
+  <div class="bead" role="presentation"></div>
+
+  <!-- TEMPLATE SECTIONS: copy a block, change the title and fill the content. -->
+  <section class="info" aria-label="About the conference">
+    <img src="assets/campus.jpg" alt="University of Pretoria campus building" loading="lazy">
+    <p>Full details on the programme, speakers and registration will be published here soon.</p>
+  </section>
+</main>
+
+<footer>
+  <img src="assets/ribbon.png" alt="" width="44">
+  <p>ISBIS 2027 · University of Pretoria, South Africa</p>
+  <p class="small">© 2027 ISBIS. All rights reserved.</p>
+</footer>
+
+<div class="modal" id="soon" role="dialog" aria-modal="true" aria-labelledby="soon-title" hidden>
+  <div class="modal-box">
+    <img src="assets/ribbon.png" alt="" width="64">
+    <h2 id="soon-title">Coming soon</h2>
+    <p><b id="soon-what">This page</b> will open soon. Please check back for updates.</p>
+    <button class="btn" id="soon-close">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

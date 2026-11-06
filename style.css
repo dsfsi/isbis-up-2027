@@ -1,0 +1,50 @@
+:root{
+  --navy:#0a1f5c; --navy-d:#061441; --gold:#c9a24a; --gold-l:#e6c878;
+  --ink:#16203f; --paper:#fff; --mist:#f3f5fa;
+  --flag-green:#007749; --flag-red:#de3831; --flag-blue:#002395;
+  --display:"Fraunces",Georgia,serif; --body:"Figtree",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding:14px clamp(16px,4vw,48px);background:#fff;border-bottom:4px solid;border-image:linear-gradient(90deg,var(--flag-green) 0 25%,var(--gold) 25% 50%,var(--flag-red) 50% 75%,var(--flag-blue) 75%) 1}
+.logos{display:flex;align-items:center;gap:24px}
+.logos img{height:clamp(38px,6vw,58px);width:auto}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 22px}
+nav a{text-decoration:none;font-weight:600;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{border-bottom-color:var(--gold)}
+nav a.btn{border-bottom:0;color:var(--navy-d)}
+
+.btn{display:inline-block;background:var(--gold);color:var(--navy-d);font:600 1rem var(--body);padding:12px 28px;border:0;border-radius:999px;text-decoration:none;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--gold-l)}
+.btn.small{padding:8px 20px}
+
+.hero{background:var(--navy-d)}
+.hero-photo{width:100%;height:clamp(220px,34vw,460px);object-fit:cover;object-position:center 45%}
+.panel{text-align:center;color:#fff;padding:36px 20px 52px}
+.kicker{margin:0 0 8px;font-weight:600;letter-spacing:.2em;color:var(--gold-l)}
+h1{margin:0;font:800 clamp(2rem,6vw,4rem)/1.1 var(--display)}
+h1 span{display:block;color:var(--gold)}
+.date{margin:20px 0 4px;font:600 clamp(1.5rem,4vw,2.4rem) var(--display)}
+.host{margin:0 0 28px;font-size:1.1rem}
+
+.bead{height:34px;background:url(assets/beadwork.png) center/auto 100% repeat-x;background-color:#fff}
+.info{max-width:760px;margin:0 auto;padding:56px 20px;text-align:center;display:grid;gap:24px;justify-items:center}
+.info img{border-radius:6px;max-height:300px;width:auto}
+.info p{margin:0;font-size:1.15rem;max-width:56ch}
+
+footer{background:var(--navy-d);color:#dfe5f7;text-align:center;padding:36px 20px;display:grid;gap:6px;justify-items:center}
+footer p{margin:0}.small{font-size:.85rem;opacity:.75}
+
+.modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(6,20,65,.7);padding:20px;z-index:10}
+.modal[hidden]{display:none}
+.modal-box{background:#fff;border-top:6px solid var(--gold);border-radius:10px;padding:32px 36px;max-width:420px;text-align:center;display:grid;gap:12px;justify-items:center;animation:pop .25s ease-out}
+.modal-box h2{margin:0;font:800 1.8rem var(--display);color:var(--navy)}
+.modal-box p{margin:0}
+@keyframes pop{from{transform:scale(.92);opacity:0}}
+@media (prefers-reduced-motion:reduce){.modal-box{animation:none}html{scroll-behavior:auto}}
+@media (max-width:640px){.top{justify-content:center}.logos{gap:14px}nav{justify-content:center;gap:4px 14px}}
